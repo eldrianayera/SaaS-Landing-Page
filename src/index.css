@@ -61,7 +61,7 @@
   }
 
   section {
-    @apply relative min-h-screen max-w-7xl container lg:px-40 md:px-15 mt-25 lg:mt-30;
+    @apply relative max-w-7xl container lg:px-40 md:px-15 mt-25 lg:mt-30;
   }
 }
 

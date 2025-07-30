@@ -30,7 +30,9 @@ export const DataWidget = () => {
       {data.map((data, key) => {
         return (
           <div key={key} className="flex flex-col justify-center items-center">
-            <h3 className="lg:text-3xl md:text-3xl text-3xl font-bold">{data.number}</h3>
+            <h3 className="lg:text-3xl md:text-3xl text-3xl font-bold">
+              {data.number}
+            </h3>
             <p className="text-xs text">{data.description}</p>
           </div>
         );

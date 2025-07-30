@@ -32,7 +32,7 @@ export const HeroSection = () => {
         </div>
         <div className="rounded-2xl max-sm:px-10 flex items-center">
           <img
-            src="@/../public/ai.png"
+            src="/ai.png"
             alt="ai"
             className="rounded-2xl border-2 container-glow"
           />
