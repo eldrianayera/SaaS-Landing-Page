@@ -1,4 +1,5 @@
-import { NavBar } from "./Navbar";
+import { HeroSection } from "../sections/HeroSection";
+import { NavBar } from "../components/Navbar";
 
 export const Home = () => {
   return (
@@ -7,6 +8,7 @@ export const Home = () => {
       {/* NavBar */}
       <NavBar />
       {/* Main Content */}
+      <HeroSection />
       {/* Footer */}
     </div>
   );
