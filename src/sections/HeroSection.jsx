@@ -1,11 +1,12 @@
 import { Mail } from "lucide-react";
+import { DataWidget } from "../components/DataWidget";
 
 export const HeroSection = () => {
   return (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 container ">
         <div className="flex flex-col items-center md:items-start text-center lg:text-left gap-10">
-          <h1 className="text-3xl md:text-5xl font-bold ">
+          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold ">
             Supercharge Your Business Growth with
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-violet-600 ml-3">
               Smarter AI
@@ -20,22 +21,24 @@ export const HeroSection = () => {
             {" "}
             <Mail />
             <input
+              className="focus:outline-hidden"
               type="email"
               name="email"
               id="email"
               placeholder="eldrian@ai.com"
             />
-            <button className="primary-button">Get Started</button>
+            <button className="primary-button lg:text-xs">Get Started</button>
           </div>
         </div>
-        <div className="rounded-2xl max-sm:px-10">
+        <div className="rounded-2xl max-sm:px-10 flex items-center">
           <img
             src="@/../public/ai.png"
             alt="ai"
-            className="rounded-2xl border-2 shadow-[0_0_30px_hsl(var(--primary))]"
+            className="rounded-2xl border-2 container-glow"
           />
         </div>
       </div>
+      <DataWidget />
     </section>
   );
 };

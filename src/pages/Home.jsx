@@ -9,9 +9,6 @@ export const Home = () => {
       <NavBar />
       {/* Main Content */}
       <HeroSection />
-      <HeroSection />
-      <HeroSection />
-      <HeroSection />
       {/* Footer */}
     </div>
   );

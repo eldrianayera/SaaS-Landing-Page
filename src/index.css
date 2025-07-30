@@ -61,7 +61,7 @@
   }
 
   section {
-    @apply min-h-screen max-w-7xl container lg:px-40 md:px-15 mt-20 lg:mt-25;
+    @apply relative min-h-screen max-w-7xl container lg:px-40 md:px-15 mt-25 lg:mt-30;
   }
 }
 
@@ -99,6 +99,10 @@
   @apply px-6 py-2 rounded-full bg-primary text-white font-medium
            transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
            hover:scale-105 active:scale-95;
+}
+
+@utility container-glow {
+  @apply shadow-[0_0_30px_hsl(var(--primary))];
 }
 
 #root {
