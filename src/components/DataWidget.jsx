@@ -23,7 +23,7 @@ export const DataWidget = () => {
     <div
       className={cn(
         "grid grid-cols-2 py-6 mt-15 border-2 border-foreground rounded-3xl max-w-2xl mx-auto gap-3 container-glow",
-        "md:py-4",
+        "md:py-4 opacity-0 animate-fade-in-3",
         "lg:grid-cols-4 divide-x divide-primary lg:py-4"
       )}
     >

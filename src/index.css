@@ -17,13 +17,13 @@
   --animate-fade-in-3: fade-in 0.7s ease-out 0.8s forwards;
 
   @keyframes fade-in {
-    0% : {
+    0% {
       opacity: 0;
       transform: translateY(20px);
     }
-    ,
-    100% : {
-      opacity: 100;
+
+    100% {
+      opacity: 1;
       transform: translateY(0);
     }
   }
@@ -61,7 +61,7 @@
   }
 
   section {
-    @apply relative max-w-7xl container lg:px-40 md:px-15 mt-25 lg:mt-30;
+    @apply relative max-w-7xl container lg:px-40 max-md:px-15 mt-25 lg:mt-30 scroll-m-25;
   }
 }
 
@@ -86,9 +86,13 @@
 }
 
 @utility text-glow {
-  @apply relative;
+  @apply relative z-30;
   text-shadow: 0 0 5px rgba(255, 45, 241, 0.6), 0 0 10px rgba(255, 45, 241, 0.7),
     0 0 20px rgba(255, 45, 241, 0.8), 0 0 40px rgba(255, 45, 241, 0.9);
+}
+
+@utility section-header {
+  @apply text-3xl max-sm:text-2xl font-bold;
 }
 
 @utility card-hover {
@@ -103,6 +107,10 @@
 
 @utility container-glow {
   @apply shadow-[0_0_30px_hsl(var(--primary))];
+}
+
+@utility container-glow-sm {
+  @apply shadow-[0_0_10px_hsl(var(--primary))];
 }
 
 #root {
