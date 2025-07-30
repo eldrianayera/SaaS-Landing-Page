@@ -9,11 +9,19 @@ export const NavBar = () => {
           Eldrian<span className="text-primary font-extrabold">AI</span>
         </a>
       </div>
-      <div className="flex gap-7">
-        <a href="#hero">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About Us</a>
-        <a href="#pricing">Pricing</a>
+      <div className="flex gap-9">
+        <a className="rounded-full py px-2" href="#hero">
+          Home
+        </a>
+        <a className="rounded-full py px-2" href="#services">
+          Services
+        </a>
+        <a className="rounded-full py px-2" href="#about">
+          About Us
+        </a>
+        <a className="rounded-full py px-2" href="#pricing">
+          Pricing
+        </a>
       </div>
       <div className="flex items-center gap-3">
         <button className="primary-button">Get Started</button>
