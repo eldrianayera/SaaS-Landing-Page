@@ -3,8 +3,8 @@ import { Mail } from "lucide-react";
 export const HeroSection = () => {
   return (
     <section>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-15 container ">
-        <div className="flex flex-col items-center md:items-start text-center md:text-left gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-15 container ">
+        <div className="flex flex-col items-center md:items-start text-center lg:text-left gap-10">
           <h1 className="text-3xl md:text-5xl font-bold ">
             Supercharge Your Business Growth with
             <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-violet-600 ml-3">
@@ -28,8 +28,12 @@ export const HeroSection = () => {
             <button className="primary-button">Get Started</button>
           </div>
         </div>
-        <div className="rounded-2xl">
-          <img src="@/../public/ai.png" alt="" />
+        <div className="rounded-2xl max-sm:px-10">
+          <img
+            src="@/../public/ai.png"
+            alt="ai"
+            className="rounded-2xl border-2 shadow-[0_0_30px_hsl(var(--primary))]"
+          />
         </div>
       </div>
     </section>

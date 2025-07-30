@@ -20,7 +20,6 @@ export const NavBar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -28,7 +27,7 @@ export const NavBar = () => {
     <nav
       className={cn(
         "fixed z-50 transition-all duration-300 w-full",
-        isScrolled ? "py-3 backdrop-blur-md shadow-xs" : "py-5"
+        isScrolled ? "py-2  backdrop-blur-md shadow-xs" : "py-5"
       )}
     >
       <div className=" flex items-center justify-between max-md:justify-evenly container max-w-7xl lg:px-20 md:px-15">
