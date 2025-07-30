@@ -16,7 +16,6 @@ export const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
-      console.log(window.scrollY);
     };
 
     window.addEventListener("scroll", handleScroll);

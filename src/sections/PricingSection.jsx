@@ -42,15 +42,18 @@ export const PricingSection = () => {
           flexible AI-powered solutions designed for every business size.
         </p>
         <div className="flex flex-col md:flex-row justify-between mt-15 gap-8">
-          {pricing.map((plan) => {
+          {pricing.map((plan, key) => {
             return (
-              <div className="relative flex flex-col text-left border-4 pl-5 pt-5 pr-9 pb-8 rounded-3xl w-full card-hover">
+              <div
+                key={key}
+                className="relative flex flex-col text-left border-4 pl-5 pt-5 pr-9 pb-8 rounded-3xl w-full card-hover"
+              >
                 <h4 className="font-bold mb-3">{plan.name}</h4>
                 <h3 className="text-2xl mb-7">{plan.price}</h3>
                 <div className="mb-15">
-                  {plan.benefit.map((benefit) => {
+                  {plan.benefit.map((benefit, key) => {
                     return (
-                      <div className="flex gap-3 mb-3 text-sm">
+                      <div key={key} className="flex gap-3 mb-3 text-sm">
                         <CheckCircle2 className="text-green-500" />
                         <p>{benefit}</p>
                       </div>
